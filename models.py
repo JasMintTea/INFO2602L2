@@ -17,6 +17,7 @@ class User(db.Model):
     self.username = username
     self.email = email
     self.set_password(password)
+    # all functions inside of a class must have self as the first argument
 
   def set_password(self, password):
     """Create hashed password."""
